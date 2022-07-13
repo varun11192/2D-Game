@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="I Have To Fly!"
+        android:layout_above="@id/play_tv"
+        android:layout_below="@id/highScore_tv"
+        android:textStyle="bold"
+        android:textColor="@color/GameName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/play_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="64sp"
+        android:text="Play"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/highScore_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="High Score"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/volume_cntrl"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+        />
+
+
+
+
+
+</RelativeLayout>
